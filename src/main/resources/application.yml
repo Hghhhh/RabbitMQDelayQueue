@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: delayQueue
+  rabbitmq:
+    host: 120.xx.xxxx.xx
+    port: 5672
+    username: hgh
+    password: xxxx
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+    publisher-confirms : true
+    virtual-host: "/test"
